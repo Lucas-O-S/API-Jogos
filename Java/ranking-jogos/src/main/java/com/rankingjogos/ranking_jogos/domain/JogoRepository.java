@@ -5,8 +5,8 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface JogoRepository {
-    Jogador save(Jogador jogador);
-    Optional<Jogador> findById(UUID id);
-    List<Jogador> findAll();
-    void delete(UUID id);
+    Jogo Save(Jogo jogo);
+    Optional<Jogo> FindById(UUID id);
+    List<Jogo> FindAll();
+    void Delete(UUID id);
 }
