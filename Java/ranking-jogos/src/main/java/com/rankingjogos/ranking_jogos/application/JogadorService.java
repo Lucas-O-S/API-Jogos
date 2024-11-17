@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.rankingjogos.ranking_jogos.domain.Jogador;
-import com.rankingjogos.ranking_jogos.domain.JogadorRepository;
+import com.rankingjogos.ranking_jogos.model.Jogador;
+import com.rankingjogos.ranking_jogos.repository.JogadorRepository;
 
 public class JogadorService {
 
@@ -17,6 +17,10 @@ public class JogadorService {
 
     public Jogador CriarJogador(Jogador jogador) {
         return jogadorRepository.Save(jogador);
+    }
+
+    public Jogador AtualizarJogador(UUID id, Jogador jogador) {
+        return jogadorRepository.Update(id, jogador);
     }
 
     public Optional<Jogador> ObterJogador(UUID id) {

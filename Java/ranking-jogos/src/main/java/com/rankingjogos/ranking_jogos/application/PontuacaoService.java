@@ -3,8 +3,8 @@ package com.rankingjogos.ranking_jogos.application;
 import java.util.List;
 import java.util.UUID;
 
-import com.rankingjogos.ranking_jogos.domain.Pontuacao;
-import com.rankingjogos.ranking_jogos.domain.PontuacaoRepository;
+import com.rankingjogos.ranking_jogos.model.Pontuacao;
+import com.rankingjogos.ranking_jogos.repository.PontuacaoRepository;
 
 public class PontuacaoService {
     private final PontuacaoRepository pontuacaoRepository;

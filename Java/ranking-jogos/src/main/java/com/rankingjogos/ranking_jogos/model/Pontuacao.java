@@ -1,4 +1,4 @@
-package com.rankingjogos.ranking_jogos.domain;
+package com.rankingjogos.ranking_jogos.model;
 import java.sql.Date;
 import java.util.UUID;
 
