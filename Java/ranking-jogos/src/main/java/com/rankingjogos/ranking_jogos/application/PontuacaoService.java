@@ -3,9 +3,12 @@ package com.rankingjogos.ranking_jogos.application;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import com.rankingjogos.ranking_jogos.model.Pontuacao;
 import com.rankingjogos.ranking_jogos.repository.PontuacaoRepository;
 
+@Service
 public class PontuacaoService {
     private final PontuacaoRepository pontuacaoRepository;
 
@@ -14,7 +17,7 @@ public class PontuacaoService {
     }
 
     public Pontuacao Save(Pontuacao pontuacao){
-        return pontuacaoRepository.Save(pontuacao);
+        return pontuacaoRepository.save(pontuacao);
     }
 
     public List<Pontuacao> FindByJogoId(UUID jogoId){

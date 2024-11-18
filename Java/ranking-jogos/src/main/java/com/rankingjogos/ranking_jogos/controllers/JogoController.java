@@ -35,7 +35,7 @@ public class JogoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Jogo> AtualizarJogo(@PathVariable UUID id, @RequestBody Jogo jogo){
-        return ResponseEntity.ok(jogoService.AtualizarJogo(id, jogo));
+        return ResponseEntity.ok(jogoService.AtualizarJogo(jogo, id));
     }
 
     @GetMapping("/{id}")

@@ -4,9 +4,12 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import com.rankingjogos.ranking_jogos.model.Jogador;
 import com.rankingjogos.ranking_jogos.repository.JogadorRepository;
 
+@Service
 public class JogadorService {
 
     private final JogadorRepository jogadorRepository;
@@ -16,22 +19,23 @@ public class JogadorService {
     }
 
     public Jogador CriarJogador(Jogador jogador) {
-        return jogadorRepository.Save(jogador);
+        return jogadorRepository.save(jogador);
     }
 
-    public Jogador AtualizarJogador(UUID id, Jogador jogador) {
-        return jogadorRepository.Update(id, jogador);
+    public Jogador AtualizarJogador(Jogador jogador, UUID id){
+        jogador.setId(id);
+        return jogadorRepository.save(jogador);
     }
 
     public Optional<Jogador> ObterJogador(UUID id) {
-        return jogadorRepository.FindById(id);
+        return jogadorRepository.findById(id);
     }
 
     public List<Jogador> ListarJogadores() {
-        return jogadorRepository.FindAll();
+        return jogadorRepository.findAll();
     }
 
     public void RemoverJogador(UUID id) {
-        jogadorRepository.Delete(id);
+        jogadorRepository.deleteById(id);
     }
 }

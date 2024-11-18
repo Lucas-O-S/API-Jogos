@@ -32,7 +32,7 @@ public class JogadorController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Jogador> AtualizarJogador(@PathVariable UUID id, @RequestBody Jogador jogador){
-        return ResponseEntity.ok(jogadorService.AtualizarJogador(id, jogador));
+        return ResponseEntity.ok(jogadorService.AtualizarJogador(jogador, id));
     }
     
     @GetMapping("/{id}")
