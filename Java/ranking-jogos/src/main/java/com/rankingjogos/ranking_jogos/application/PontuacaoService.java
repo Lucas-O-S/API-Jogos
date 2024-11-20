@@ -21,11 +21,11 @@ public class PontuacaoService {
     }
 
     public List<Pontuacao> FindByJogoId(UUID jogoId){
-        return pontuacaoRepository.FindByJogadorId(jogoId);
+        return pontuacaoRepository.findByJogo_Id(jogoId);
     }
 
     public List<Pontuacao> FindByJogadorId(UUID jogadorId){
-        return pontuacaoRepository.FindByJogadorId(jogadorId);
+        return pontuacaoRepository.findByJogo_Id(jogadorId);
     }
     
 }

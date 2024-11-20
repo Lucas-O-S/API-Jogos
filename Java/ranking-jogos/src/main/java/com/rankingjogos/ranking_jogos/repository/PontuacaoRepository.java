@@ -7,8 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.rankingjogos.ranking_jogos.model.Pontuacao;
 
 public interface PontuacaoRepository extends JpaRepository<Pontuacao, UUID>{
-    Pontuacao save(Pontuacao pontuacao);
-    List<Pontuacao> findByJogoId(UUID jogoId);
-    List<Pontuacao> FindByJogadorId(UUID jogadorId);
+    List<Pontuacao> findByJogo_Id(UUID jogoId);
+    List<Pontuacao> findByJogador_Id(UUID jogadorId); 
     
 }
