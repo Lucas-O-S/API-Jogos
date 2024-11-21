@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,12 +28,12 @@ public class PontuacaoController {
     }
 
     @RequestMapping("/jogo/{id}")
-    public ResponseEntity<List<Pontuacao>> BuscarPontuacaoJogo(@RequestAttribute UUID id){
+    public ResponseEntity<List<Pontuacao>> BuscarPontuacaoJogo(@PathVariable UUID id){
         return ResponseEntity.ok(pontuacaoService.FindByJogoId(id));
     }
 
     @RequestMapping("/jogador/{id}")
-    public ResponseEntity<List<Pontuacao>> BuscarPontuacaoJogador(@RequestAttribute UUID id){
+    public ResponseEntity<List<Pontuacao>> BuscarPontuacaoJogador(@PathVariable UUID id){
         return ResponseEntity.ok(pontuacaoService.FindByJogadorId(id));
     }
 

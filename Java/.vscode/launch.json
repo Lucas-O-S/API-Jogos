@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-RankingJogosApplication<ranking-jogos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.rankingjogos.ranking_jogos.RankingJogosApplication",
+            "projectName": "ranking-jogos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

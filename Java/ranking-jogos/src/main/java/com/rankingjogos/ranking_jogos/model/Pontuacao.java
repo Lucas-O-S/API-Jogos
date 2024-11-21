@@ -2,8 +2,10 @@ package com.rankingjogos.ranking_jogos.model;
 import java.sql.Date;
 import java.util.UUID;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 @Entity
 public class Pontuacao {
@@ -12,12 +14,16 @@ public class Pontuacao {
     private UUID id;
     
     @ManyToOne
+    @JoinColumn(name = "jogador_id", referencedColumnName = "id", nullable = false)
     private Jogador jogador;
 
     @ManyToOne
+    @JoinColumn(name = "jogo_id", referencedColumnName = "id", nullable = false)
     private Jogo jogo;
     
     private int pontos;
+    
+    @Column(name = "data_partida")
     private Date dataPartida;
 
     // Construtor padrão

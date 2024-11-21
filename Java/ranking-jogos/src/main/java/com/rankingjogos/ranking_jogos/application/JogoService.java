@@ -12,7 +12,7 @@ import com.rankingjogos.ranking_jogos.repository.JogoRepository;
 @Service
 public class JogoService {
     private final JogoRepository jogoRepository;
-
+    
     public JogoService(JogoRepository jogoRepository){
         this.jogoRepository = jogoRepository;
     }
