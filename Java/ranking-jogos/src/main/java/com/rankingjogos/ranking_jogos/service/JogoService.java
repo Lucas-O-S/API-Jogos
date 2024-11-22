@@ -1,4 +1,4 @@
-package com.rankingjogos.ranking_jogos.application;
+package com.rankingjogos.ranking_jogos.service;
 
 import java.util.List;
 import java.util.Optional;

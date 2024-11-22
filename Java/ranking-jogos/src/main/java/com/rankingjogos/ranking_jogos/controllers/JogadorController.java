@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rankingjogos.ranking_jogos.application.JogadorService;
 import com.rankingjogos.ranking_jogos.model.Jogador;
+import com.rankingjogos.ranking_jogos.service.JogadorService;
 
 @RestController
 @RequestMapping("/api/jogadores")

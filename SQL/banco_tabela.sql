@@ -27,3 +27,4 @@ CREATE TABLE Pontuacao (
     FOREIGN KEY (jogador_Id) REFERENCES Jogador(id),
     FOREIGN KEY (jogo_Id) REFERENCES Jogo(id)
 );
+
