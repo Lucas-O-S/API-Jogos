@@ -12,7 +12,7 @@
 	<artifactId>ranking-jogos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ranking-jogos</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Projeto de Ranking de Jogos</description>
 	<url/>
 	<licenses>
 		<license/>

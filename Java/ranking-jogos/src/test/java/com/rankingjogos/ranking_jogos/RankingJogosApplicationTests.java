@@ -8,6 +8,7 @@ class RankingJogosApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }
