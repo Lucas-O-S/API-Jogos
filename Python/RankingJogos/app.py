@@ -11,7 +11,7 @@ DATABASE_URL = "mssql+pyodbc://localhost:1433/api_jogos?driver=ODBC+Driver+17+fo
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-@app.route('api/ranking/{jogo_id}')
+@app.route('api/ranking/{jogo_id}', methods = ["GET"])
 def obter_ranking(jogo_id):
     # Criação de uma sessão no banco de dados
     session = SessionLocal()
