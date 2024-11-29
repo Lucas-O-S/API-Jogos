@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rankingjogos.ranking_jogos.service.PontuacaoService;
 import com.rankingjogos.ranking_jogos.model.Pontuacao;
+import com.rankingjogos.ranking_jogos.service.PontuacaoService;
 
 @RestController
-@RequestMapping("/api/pontucao")
+@RequestMapping("/api/pontuacao")
 public class PontuacaoController {
     private final PontuacaoService pontuacaoService;
 
