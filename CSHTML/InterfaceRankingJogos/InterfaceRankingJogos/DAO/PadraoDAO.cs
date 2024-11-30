@@ -18,7 +18,7 @@ namespace InterfaceRankingJogos.DAO
         protected abstract void Post();
         protected abstract void Put();
         protected virtual async void Delete(Guid id) {
-            string urlFInal = apiURL + id.ToString();
+            string urlFInal = apiURL + "/" + id.ToString();
             HelperDAO.ChamarApi(urlFInal, "", HttpMethod.Delete).GetAwaiter().GetResult();
         }
 
@@ -31,7 +31,7 @@ namespace InterfaceRankingJogos.DAO
 
         protected virtual T Get(Guid id)
         {
-            string urlFInal = apiURL + id.ToString();
+            string urlFInal = apiURL + "/" + id.ToString();
             T model = JsonSerializer.Deserialize<T>(HelperDAO.DevolverDadosApi(urlFInal).GetAwaiter().GetResult());
 
             return model;
