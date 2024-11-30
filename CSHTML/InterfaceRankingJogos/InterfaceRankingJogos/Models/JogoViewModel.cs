@@ -1,8 +1,7 @@
 ﻿namespace InterfaceRankingJogos.Models
 {
-    public class Jogo
+    public class JogoViewModel: PadraoViewModel
     {
-        public Guid id { get; set; }  
         public string nome { get; set; }
         public string descricao { get; set; }
     }
