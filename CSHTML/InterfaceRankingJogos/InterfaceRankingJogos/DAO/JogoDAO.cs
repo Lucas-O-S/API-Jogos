@@ -6,16 +6,11 @@ namespace InterfaceRankingJogos.DAO
     {
         protected override void DefinirURL()
         {
-            apiURL = apiURL = "/jogo";
+            apiURL = apiURL + "jogo";
         }
 
-        protected override void Post()
-        {
-            throw new NotImplementedException();
-        }
-        protected override void Put()
-        {
-            throw new NotImplementedException();
-        }
+
+
+
     }
 }

@@ -1,5 +1,44 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<JogoViewModel>
+<div class="container mt-4">
+    <!-- Botões acima da tabela -->
+    <div class="mb-3">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary btn-sm">Voltar à Home</a>
+        <a href="@Url.Action("Create", "Fabricantes")" class="btn btn-success btn-sm">Criar Novo Registro</a>
+    </div>
+
+    <h2>Lista de Fabricantes</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th asp-for="Id">ID</th>
+                <th asp-for="nome">Nome</th>
+                <th asp-for="descricao">Descrição</th>
+
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Jogo in Model)
+            {
+                <tr>
+                    <td>@Jogo.id</td>
+                    <td>@Jogo.nome</td>
+                    <td>@Jogo.descricao</td>
+
+                    <td>
+                        <a asp-controller="fabricantes" asp-action="Edit" asp-route-id="@Jogo.id" class="btn btn-primary btn-sm">Editar</a>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="ApagarModel(@Jogo.id)">Excluir</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function ApagarModel(id) {
+        if (confirm("Confirmar a exclusão do registro?")) {
+            location.href = "fabricantes/Delete?Id=" + id;
+        }
+    }
+</script>

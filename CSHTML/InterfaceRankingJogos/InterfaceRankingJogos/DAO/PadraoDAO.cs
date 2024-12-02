@@ -1,4 +1,5 @@
 ﻿using InterfaceRankingJogos.Models;
+using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -15,21 +16,29 @@ namespace InterfaceRankingJogos.DAO
             DefinirURL();
         }
 
-        protected abstract void Post();
-        protected abstract void Put();
-        protected virtual async void Delete(Guid id) {
+        public virtual void Post(T model) {
+            string body = JsonSerializer.Serialize(model);
+            HelperDAO.ChamarApi(apiURL, body, HttpMethod.Post).GetAwaiter().GetResult();
+
+        }
+        public virtual void Put(T model) {
+            string urlFInal = apiURL + "/" + model.id;
+            string body = JsonSerializer.Serialize(model);
+            HelperDAO.ChamarApi(urlFInal, body, HttpMethod.Post).GetAwaiter().GetResult();
+        }
+        public virtual async void Delete(Guid id) {
             string urlFInal = apiURL + "/" + id.ToString();
             HelperDAO.ChamarApi(urlFInal, "", HttpMethod.Delete).GetAwaiter().GetResult();
         }
 
-        protected virtual List<T> GetAll()
+        public virtual List<T> GetAll()
         {
             List<T> list = JsonSerializer.Deserialize<List<T>>(HelperDAO.DevolverDadosApi(apiURL).GetAwaiter().GetResult());
 
             return list;
         }
 
-        protected virtual T Get(Guid id)
+        public virtual T Get(Guid id)
         {
             string urlFInal = apiURL + "/" + id.ToString();
             T model = JsonSerializer.Deserialize<T>(HelperDAO.DevolverDadosApi(urlFInal).GetAwaiter().GetResult());
