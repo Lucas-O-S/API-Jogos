@@ -35,12 +35,21 @@ namespace InterfaceRankingJogos.DAO
 
         public static async Task<bool> ServerChecker()
         {
-            using (HttpClient client = new HttpClient())
+            try
             {
-                HttpResponseMessage responseMessage = await client.GetAsync("http://localhost:8080/actuator/health");
+                using (HttpClient client = new HttpClient())
+                {
 
-                return responseMessage.IsSuccessStatusCode;
+                    HttpResponseMessage responseMessage = await client.GetAsync("http://localhost:8080/api/health");
+
+                    return responseMessage.IsSuccessStatusCode;
+                }
             }
+            catch
+            {
+                return false;
+            }
+
         }
     }
 }
