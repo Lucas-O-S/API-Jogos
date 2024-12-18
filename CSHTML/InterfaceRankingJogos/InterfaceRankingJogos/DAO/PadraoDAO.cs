@@ -24,7 +24,7 @@ namespace InterfaceRankingJogos.DAO
         public virtual void Put(T model) {
             string urlFInal = apiURL + "/" + model.id;
             string body = JsonSerializer.Serialize(model);
-            HelperDAO.ChamarApi(urlFInal, body, HttpMethod.Post).GetAwaiter().GetResult();
+            HelperDAO.ChamarApi(urlFInal, body, HttpMethod.Put).GetAwaiter().GetResult();
         }
         public virtual async void Delete(Guid id) {
             string urlFInal = apiURL + "/" + id.ToString();

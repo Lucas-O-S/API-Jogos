@@ -27,7 +27,7 @@
 
                     <td>
                         <a asp-controller="jogo" asp-action="Update" asp-route-id="@Jogo.id" class="btn btn-primary btn-sm">Editar</a>
-                        <button type="button" class="btn btn-danger btn-sm" onclick="ApagarModel(@Jogo.id)">Excluir</button>
+                        <button type="button" class="btn btn-danger btn-sm" onclick="ApagarModel(`@Jogo.id`)">Excluir</button>
                     </td>
                 </tr>
             }
@@ -38,7 +38,7 @@
 <script>
     function ApagarModel(id) {
         if (confirm("Confirmar a exclusão do registro?")) {
-            location.href = "jogo/Delete?Id=" + id;
+            location.href = "/jogo/Delete?Id=" + id;
         }
     }
 </script>

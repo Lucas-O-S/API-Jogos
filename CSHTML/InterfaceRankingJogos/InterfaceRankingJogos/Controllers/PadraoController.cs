@@ -42,9 +42,12 @@ namespace InterfaceRankingJogos.Controllers
             return View ("form", model);
         }
 
-        public IActionResult Update(T model)
+        public IActionResult Update(Guid id)
         {
             ViewBag.operacao = "E";
+
+            T model = dao.Get(id);
+
             return View("form", model);
         }
 
