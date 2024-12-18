@@ -2,19 +2,13 @@
 
 namespace InterfaceRankingJogos.DAO
 {
-    public class JogoDAO: PadraoDAO<JogoViewModel>
+    public class JogadorDAO : PadraoDAO<JogadorViewModel>
     {
-        public JogoDAO() { }
+        public JogadorDAO() { }
 
         protected override void DefinirURL()
         {
-            apiURL = apiURL + "jogo";
+            apiURL = apiURL + "jogadores";
         }
-
-
-
-
-
-
     }
 }
