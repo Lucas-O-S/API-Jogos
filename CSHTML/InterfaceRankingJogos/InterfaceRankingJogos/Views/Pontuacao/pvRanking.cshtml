@@ -1,0 +1,49 @@
+﻿<main class="container">
+	<div class="container">
+		<div class="mb-3">
+			<a href="@Url.Action("Index", "Home")" class="btn btn-secondary btn-sm">Voltar à Home</a>
+			<a href="@Url.Action("insert", "pontuacao")" class="btn btn-success btn-sm">Criar Novo Registro</a>
+		</div>
+		<fieldset id="area_filtro" class="form-group main-section">
+			<legend>Filtro de pesquisa</legend>
+			<div class="row linha">
+
+				<div class="col-md-5" id="EscolhaDiv">
+					<label for="Escolha" class="form-label"><b>Jogo</b></label>
+					<select id="Escolha">
+						@foreach (JogoViewModel jogo in ViewBag.jogos)
+						{
+							<option value="@jogo.id">@jogo.nome</option>
+						}
+					</select>
+				</div>
+
+			</div>
+			<div class="row linha">
+				<div class="col-md-12 d-flex align-items-center">
+					<input type="button" name="pesquisar" id="pesquisar" value="Pesquisar" onclick="pesquisar()" class="btn btn-primary btn-sm w-100" />
+				</div>
+			</div>
+		</fieldset>
+	</div>
+	<div id="resultadoConsulta" class="table-responsive"></div>
+</main>
+
+<script>
+
+
+	function pesquisar() {
+		var vValor = document.getElementById('Escolha').value;
+		$.ajax({
+			url: "/Pontuacao/PesquisaAvancada",
+			data: { id: vValor },
+			success: function (dados) {
+				if (dados.erro != undefined) {
+					alert(dados.msg);
+				} else {
+					document.getElementById('resultadoConsulta').innerHTML = dados;
+				}
+			}
+		});
+	}
+</script>

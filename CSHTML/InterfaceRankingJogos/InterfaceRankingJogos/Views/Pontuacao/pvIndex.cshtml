@@ -1,0 +1,38 @@
+﻿@model List<PontuacaoViewModel>
+<div class="container mt-4">
+    <!-- Botões acima da tabela -->
+
+
+    <h2>Lista de Jogadores</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+
+                <th asp-for="Id">ID</th>
+
+                   
+                <th asp-for="jogo">Jogo</th>
+                    
+                <th asp-for="jogador">Jogador</th>
+                   
+                <th asp-for="Idade">Pontucao</th>
+                   
+                <th asp-for="pontos">Data da Partida</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pontuacao in Model)
+            {
+                <tr>
+                    <td>@pontuacao.id</td>
+                    <td>@pontuacao.jogo.nome</td>
+                    <td>@pontuacao.jogador.nome</td>
+                    <td>@pontuacao.pontos</td>
+                    <td>@pontuacao.data_partida</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

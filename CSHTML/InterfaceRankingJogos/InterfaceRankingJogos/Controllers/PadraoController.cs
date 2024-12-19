@@ -22,7 +22,10 @@ namespace InterfaceRankingJogos.Controllers
         {
             ModelState.Clear();
         }
-        public IActionResult Index()
+     
+        protected virtual void ViewBags() { } 
+
+        public virtual IActionResult Index()
         {
             try
             {
@@ -36,17 +39,19 @@ namespace InterfaceRankingJogos.Controllers
 
         }
 
-        public IActionResult Insert() {
+        public virtual IActionResult Insert() {
             ViewBag.operacao = "I";
-            T model = Activator.CreateInstance(typeof(T)) as T;
+            ViewBags();
+			T model = Activator.CreateInstance(typeof(T)) as T;
             return View ("form", model);
         }
 
-        public IActionResult Update(Guid id)
+        public virtual IActionResult Update(Guid id)
         {
             ViewBag.operacao = "E";
+			ViewBags();
 
-            T model = dao.Get(id);
+			T model = dao.Get(id);
 
             return View("form", model);
         }
@@ -68,7 +73,7 @@ namespace InterfaceRankingJogos.Controllers
             }
         }
 
-        public ActionResult Enviar(T model, string operacao)
+        public virtual ActionResult Enviar(T model, string operacao)
         {
             try
             {
