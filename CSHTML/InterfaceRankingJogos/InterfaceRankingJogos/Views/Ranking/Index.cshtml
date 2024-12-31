@@ -2,12 +2,10 @@
 	<div class="container">
 		<div class="mb-3">
 			<a href="@Url.Action("Index", "Home")" class="btn btn-secondary btn-sm">Voltar à Home</a>
-			<a href="@Url.Action("insert", "pontuacao")" class="btn btn-success btn-sm">Criar Novo Registro</a>
 		</div>
 		<fieldset id="area_filtro" class="form-group main-section">
 			<legend>Filtro de pesquisa</legend>
 			<div class="row linha">
-
 				<div class="col-md-5" id="EscolhaDiv">
 					<label for="Escolha" class="form-label"><b>Jogo</b></label>
 					<select id="Escolha">
@@ -31,11 +29,10 @@
 
 <script>
 
-
 	function pesquisar() {
-		var vValor = document.getElementById('Escolha').value;
+		var vValor = document.getElementById('Escolha').value ;
 		$.ajax({
-			url: "/Pontuacao/PesquisaAvancada",
+			url: "/Ranking/PesquisaAvancada",
 			data: { id: vValor },
 			success: function (dados) {
 				if (dados.erro != undefined) {

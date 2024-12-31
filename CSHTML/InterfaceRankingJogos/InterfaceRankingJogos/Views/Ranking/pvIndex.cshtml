@@ -1,0 +1,29 @@
+﻿@model List<RankingViewModel>
+<div class="container mt-4">
+    <!-- Botões acima da tabela -->
+
+
+    <h2>Lista de Jogadores</h2>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+
+                <th asp-for="jogador">Jogador</th>
+
+                <th asp-for="pontuacao">Pontucao</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Ranking in Model)
+            {
+                <tr>
+                    <td>@Ranking.nome</td>
+                    <td>@Ranking.pontos</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

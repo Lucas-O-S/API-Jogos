@@ -32,22 +32,6 @@ namespace InterfaceRankingJogos.Controllers
 			ViewBag.jogadores = jogadorDao.GetAll();
 		}
 
-		public IActionResult Ranking(Guid jogoId)
-        {
-            try
-            {
-                PontuacaoDAO pDao = new PontuacaoDAO();
-                List<PontuacaoViewModel> lista = pDao.BuscarRanking(jogoId);
-
-
-                return View("",lista);
-            }
-            catch (Exception ex)
-            {
-                return View("Error", new ErrorViewModel(ex.ToString()));
-
-            }
-        }
 
         public IActionResult PesquisaAvancada(Guid id, string opcao)
         {
@@ -74,25 +58,5 @@ namespace InterfaceRankingJogos.Controllers
 
 		}
 
-		public IActionResult PesquisaAvancada(Guid id)
-		{
-			try
-			{
-
-
-				PontuacaoDAO pDao = new PontuacaoDAO();
-
-				List<PontuacaoViewModel> lista = pDao.BuscarRanking(id);
-
-				return PartialView("pvIndex", lista);
-			}
-			catch (Exception ex)
-			{
-				return View("Error", new ErrorViewModel(ex.ToString()));
-
-			}
-
-
-		}
 	}
 }
