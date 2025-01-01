@@ -58,5 +58,21 @@ namespace InterfaceRankingJogos.Controllers
 
 		}
 
-	}
+        protected override void ValidarDados(PontuacaoViewModel model, string operacao)
+        {
+            base.ValidarDados(model, operacao);
+
+            if (model.pontos < 0)
+                ModelState.AddModelError("pontos", "Pontuação invalida");
+
+
+            if (model.dataPartida < new DateTime(1753, 01, 01))
+                ModelState.AddModelError("data_partida","Data invalida, escolha uma maior");
+            if (model.dataPartida > DateTime.Today)
+                ModelState.AddModelError("data_partida", "Data invalida, escolha uma menor");
+            
+
+        }
+
+    }
 }

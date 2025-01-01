@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\Downloads\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj": {}
+    "C:\\Users\\lucas\\Downloads\\Programação\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\Downloads\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj": {
+    "C:\\Users\\lucas\\Downloads\\Programação\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\Downloads\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\Downloads\\Programação\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj",
         "projectName": "InterfaceRankingJogos",
-        "projectPath": "C:\\Users\\lucas\\Downloads\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj",
+        "projectPath": "C:\\Users\\lucas\\Downloads\\Programação\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\Downloads\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\Downloads\\Programação\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

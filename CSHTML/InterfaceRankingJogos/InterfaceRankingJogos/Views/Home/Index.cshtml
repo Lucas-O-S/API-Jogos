@@ -2,54 +2,62 @@
     ViewData["Title"] = "Home Page";
 }
 
-<main>
-    <div class="Row">
-        <section>
-            <li class="dropdown">
-                <a id="dropdown_menu01" data-bs-toggle="dropdown" aria-expanded="false"> 
-                    <span>Jogo</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown_menu01">
+<main class="container mt-5">
+    <div class="row">
+        <!-- Jogo Section -->
+        <div class="col-md-3">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle w-100"
+                        type="button"
+                        id="dropdown_menu_jogo"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    Jogo
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown_menu_jogo">
                     <li><a href="jogo/insert" class="dropdown-item">Cadastro</a></li>
                     <li><a href="jogo/index" class="dropdown-item">Listagem</a></li>
                 </ul>
-            </li>
-        </section>
+            </div>
+        </div>
 
-        <section>
-            <li class="dropdown">
-                <a id="dropdown_menu01" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>Jogador</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown_menu01">
+        <!-- Jogador Section -->
+        <div class="col-md-3">
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle w-100"
+                        type="button"
+                        id="dropdown_menu_jogador"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    Jogador
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown_menu_jogador">
                     <li><a href="Jogador/insert" class="dropdown-item">Cadastro</a></li>
                     <li><a href="Jogador/index" class="dropdown-item">Listagem</a></li>
                 </ul>
-            </li>
-        </section>
+            </div>
+        </div>
 
-        <section>
-            <li class="dropdown">
-                <a id="dropdown_menu01" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>Pontuação</span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown_menu01">
+        <!-- Pontuação Section -->
+        <div class="col-md-3">
+            <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle w-100"
+                        type="button"
+                        id="dropdown_menu_pontuacao"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    Pontuação
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdown_menu_pontuacao">
                     <li><a href="pontuacao/insert" class="dropdown-item">Cadastro</a></li>
                     <li><a href="pontuacao/index" class="dropdown-item">Listagem</a></li>
-                    <li><a href="pontuacao/Ranking" class="dropdown-item">Ranking</a></li>
-
                 </ul>
-            </li>
-        </section>
+            </div>
+        </div>
 
+        <!-- Ranking Section -->
+        <div class="col-md-3">
+            <a href="Ranking/Index" class="btn btn-danger w-100">
+                Ranking
+            </a>
 
-        <section>
-            <li class="dropdown">
-                <a a href="Ranking/Index ">
-                    <span>Ranking</span>
-                </a>
-            </li>
-        </section>
-
-    </div>
-</main>

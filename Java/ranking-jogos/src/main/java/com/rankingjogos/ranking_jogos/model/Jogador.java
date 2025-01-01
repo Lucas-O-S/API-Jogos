@@ -23,7 +23,7 @@ public class Jogador {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
-    }
+    }                                           
 
     // Getters e Setters
     public UUID getId() {
@@ -33,6 +33,7 @@ public class Jogador {
     public void setId(UUID id) {
         this.id = id;
     }
+    
 
     public String getNome() {
         return nome;

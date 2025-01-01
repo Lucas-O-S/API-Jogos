@@ -9,39 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InterfaceRankingJogos
 build_property.RootNamespace = InterfaceRankingJogos
-build_property.ProjectDir = C:\Users\lucas\Downloads\API-Jogos\CSHTML\InterfaceRankingJogos\InterfaceRankingJogos\
+build_property.ProjectDir = C:\Users\lucas\Downloads\Programação\API-Jogos\CSHTML\InterfaceRankingJogos\InterfaceRankingJogos\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lucas\Downloads\API-Jogos\CSHTML\InterfaceRankingJogos\InterfaceRankingJogos
+build_property.MSBuildProjectDirectory = C:\Users\lucas\Downloads\Programação\API-Jogos\CSHTML\InterfaceRankingJogos\InterfaceRankingJogos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Home/Index.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Home/Privacy.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Shared/Error.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Jogador/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvclxGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Jogador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nYWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Jogo/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Jogo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Pontuacao/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9udHVhY2FvXEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Pontuacao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9udHVhY2FvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Pontuacao/pvIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9udHVhY2FvXHB2SW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Ranking/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Ranking/pvIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xwdkluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/_ViewImports.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/_ViewStart.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lucas/Downloads/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Shared/_Layout.cshtml]
+[C:/Users/lucas/Downloads/Programação/API-Jogos/CSHTML/InterfaceRankingJogos/InterfaceRankingJogos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wrz0nbxfmt

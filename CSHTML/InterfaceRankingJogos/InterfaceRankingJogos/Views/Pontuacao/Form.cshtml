@@ -35,9 +35,9 @@
 		</div>
 
 		<div class="form-group">
-			<label asp-for="data_partida" class="control-label"> Data da Partida </label>
-			<input asp-for="data_partida" type="datetime" class="form-control" />
-			<span asp-validation-for="data_partida" class="text-danger"></span>
+			<label asp-for="dataPartida" class="control-label"> Data da Partida </label>
+			<input asp-for="dataPartida" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")"/>
+			<span asp-validation-for="dataPartida" class="text-danger"></span>
 		</div>
 
 		<button type="submit" class="btn btn-success">Salvar</button>

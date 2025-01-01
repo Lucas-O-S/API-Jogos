@@ -21,6 +21,7 @@ namespace InterfaceRankingJogos.Controllers
         protected virtual void ValidarDados(T model, string operacao)
         {
             ModelState.Clear();
+            
         }
      
         protected virtual void ViewBags() { } 
@@ -78,14 +79,22 @@ namespace InterfaceRankingJogos.Controllers
             try
             {
                 ValidarDados (model, operacao);
-                if (operacao == "I")
+                if (ModelState.IsValid)
                 {
-                    model.id = Guid.NewGuid();
-                    dao.Post(model);
+                    if (operacao == "I")
+                    {
+                        model.id = Guid.NewGuid();
+                        dao.Post(model);
+                    }
+                    else
+                        dao.Put(model);
+
                 }
                 else
                 {
-                    dao.Put(model);
+                    ViewBag.operacao = operacao;
+                    ViewBags();
+                    return View("Form", model);
                 }
                 return RedirectToAction("Index");
             }

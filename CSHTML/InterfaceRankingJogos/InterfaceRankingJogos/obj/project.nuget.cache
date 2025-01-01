@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gsExVuw6tQkFJTi919BUPMmrb0R7oyWdN+3hNyEBu5Gn/f//MBdCugSkpK/cACbMiDjxxWjDJS/pN7uMCqDjAA==",
+  "dgSpecHash": "BjQe4cVsPC13CLs1LBzNRhOT6IxpxW0h5/hS3VAvbSFF0I+Y4YD86tjnnUrku0GFjCDR2PR5vV82KE7Ij3443Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Downloads\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\lucas\\Downloads\\Programação\\API-Jogos\\CSHTML\\InterfaceRankingJogos\\InterfaceRankingJogos\\InterfaceRankingJogos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas\\.nuget\\packages\\system.io.pipelines\\9.0.0\\system.io.pipelines.9.0.0.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\system.text.encodings.web\\9.0.0\\system.text.encodings.web.9.0.0.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\system.text.json\\9.0.0\\system.text.json.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

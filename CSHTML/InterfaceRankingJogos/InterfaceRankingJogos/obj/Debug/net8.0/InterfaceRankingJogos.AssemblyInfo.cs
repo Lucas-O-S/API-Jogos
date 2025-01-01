@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InterfaceRankingJogos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a041a1dbbdb343610e2d3702fc2bc7044af3cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("InterfaceRankingJogos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InterfaceRankingJogos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
